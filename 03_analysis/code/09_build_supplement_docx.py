@@ -82,12 +82,12 @@ table(pd.DataFrame(rows),'Table S11','Joint calibration estimates and 95% rescal
 b.add_figure(doc,dict(path=F/'figure_s2_calibration.png',label='Figure S2',caption='Descriptive calibration of full DXA-panel models in the 2017–2018 temporal sample. Points are weighted means within ten probability-quantile bins; lines join bins and are not smoothed estimates. Dashed line denotes perfect calibration. Overall calibration uncertainty is in Table S11. DXA, dual-energy X-ray absorptiometry.',width=6.0,alt='Observed versus predicted proportions for the three full-panel models.'))
 b.add_figure(doc,dict(path=F/'figure_s3_participant_flow.png',label='Figure S3',caption='Participant flow across NHANES 2011–2018. Counts are unweighted and sequential; exclusion counts equal differences between adjacent eligibility stages. The diagram starts with examined adults meeting the age and recorded-pregnancy criteria, not all originally sampled survey participants. Table S3 gives cycle-specific counts. DXA, dual-energy X-ray absorptiometry; NHANES, National Health and Nutrition Examination Survey.',width=6.1,alt='Five sequential selection stages from 14,100 eligible examined adults to 3,971 complete cases, with exclusion counts and temporal partition.'))
 doc.add_heading('Transparency',1)
-para('The source survey obtained written consent under NCHS ethics oversight, as cited in the manuscript. The Ethics Committee of IST Hochschule für Management und Sport, Düsseldorf, Germany, confirmed that a separate ethics opinion was not required for this secondary analysis of deidentified public data. No specific funding was received for this work. The authors declare no conflicts of interest. Author contributions and acknowledgments are reported in the manuscript. There was no patient involvement in this secondary analysis. Code is available in GitHub release v1.0.0 (see manuscript). Local analysis freezing is not independent preregistration.')
+para('The source survey obtained written consent under NCHS ethics oversight, as cited in the manuscript. The Ethics Committee of IST Hochschule für Management und Sport, Düsseldorf, Germany, confirmed that a separate ethics opinion was not required for this secondary analysis of deidentified public data. No specific funding was received for this work. The authors declare no conflicts of interest. Author contributions and acknowledgments are reported in the manuscript. There was no patient involvement in this secondary analysis. Code is available in GitHub release v1.0.0 (see manuscript). Local analysis freezing is not independent preregistration. OpenAI Codex assisted with code development, debugging, explanatory documentation, language editing and reproducibility checks. The authors retain responsibility for analytical decisions, interpretation and the manuscript.')
 for filename,title in [('strobe-cross-sectional-checklist.md','Reporting Checklist A: STROBE cross-sectional'),('tripod-ai-checklist.md','Reporting Checklist B: TRIPOD+AI')]:
     h=doc.add_heading(title,1);h.paragraph_format.page_break_before=True
     lines=(ROOT/'05_manuscript/quality_control'/filename).read_text().splitlines()
     for line in lines:
-        if line and not line.startswith(('#','|')):para(line)
+        if line and not line.startswith(('#','|','TRIPOD+AI abstract assessment')):para(line)
     rows=[[c.strip() for c in line.strip('|').split('|')] for line in lines if line.startswith('|') and not line.startswith('|---')]
     frame=pd.DataFrame(rows[1:],columns=rows[0])
     b.add_dataframe_table(doc,frame,dict(label='',title='',note='Locations refer to named sections and labelled tables or figures in the Manuscript (M) or this Supplementary File (S).',widths=[650,1250,2800,4660],font_size=8),page_break=False)
@@ -97,6 +97,8 @@ for filename,title in [('strobe-cross-sectional-checklist.md','Reporting Checkli
             if row.cells[0].text in ('12b','26','27a'):
                 row._tr.get_or_add_trPr().append(OxmlElement('w:cantSplit'))
     text.extend([title,frame.to_string(index=False)])
+    if filename=='tripod-ai-checklist.md':
+        para(next(line for line in lines if line.startswith('TRIPOD+AI abstract assessment')))
 from document_presentation import apply_presentation
 apply_presentation(doc)
 doc.save(OUT/'nhanes_leg_to_trunk_supplement.docx');(OUT/'supplement.txt').write_text('\n\n'.join(text));print('Standalone supplement built.')

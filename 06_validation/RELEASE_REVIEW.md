@@ -65,3 +65,7 @@ The author subsequently confirmed that there was no patient involvement in this 
 Verification for this documentation update: all 109 manifest hashes, five Python regression tests and the R data-rule tests passed. The 37 aggregate files from the preserved complete reproduction were compared again with unchanged tolerances (rtol=1e-9, atol=1e-11); this is a repeat comparison, not a new analysis run. The modified supplement generator parses successfully. Current manuscript source and checklist match the corresponding working-project sources byte for byte.
 
 Remaining technical boundary: a complete R dependency restore into a fresh empty library has not been demonstrated. The existing successful numerical reproduction used an available R library. The versions CSV is not a source-archive lockfile. This update does not claim to close that gap or provide journal submission clearance.
+
+## Targeted manuscript reporting update, 5 October 2026
+
+Converted manuscript references to numeric first-citation order; added development/test counts and AI assistance disclosure. Supplement source includes the same disclosure, 52 TRIPOD+AI entries (including 3c and 8c), and a transparent abstract assessment. Analysis code, aggregate results and environment specifications are unchanged. The tracked Word deliverables remain local. Correspondence metadata and final journal layout remain pending; this update does not certify submission readiness. Existing v1.0.0 tag remains unchanged.

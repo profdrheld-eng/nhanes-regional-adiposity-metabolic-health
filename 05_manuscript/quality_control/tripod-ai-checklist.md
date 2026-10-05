@@ -7,9 +7,10 @@ Official checklist: https://www.tripod-statement.org/wp-content/uploads/2019/12/
 | Item | Topic | Location | Assessment and limitations |
 |---|---|---|---|
 | 1 | Title | M Title and Abstract | Partial: prediction is secondary and not explicit in the title. |
-| 2 | Abstract | M Abstract | Partial: test sample and results reported; development cases and a separate full abstract-checklist assessment remain absent. |
+| 2 | Abstract | M Abstract | Development/test participants and cases are reported. The abstract assessment below identifies remaining partial reporting. |
 | 3a | Context | M Introduction | Clinical background and additional information beyond anthropometry described. |
 | 3b | Intended use | M Introduction; S Methods S1–S2 | Research benchmark; no clinical deployment or prospective risk claim. |
+| 3c | Health inequalities | M Covariates and Discussion | Partial: socioeconomic covariates included; no dedicated health-inequality assessment. |
 | 4 | Objectives | M Introduction | Exploratory incremental discrimination from total and regional DXA measures jointly and model-class comparison specified. |
 | 5a | Source | M Study Design | Public NHANES examinations identified. |
 | 5b | Dates | M Study Design; S Table S9b | Development 2011–2016 and testing 2017–2018. |
@@ -19,6 +20,7 @@ Official checklist: https://www.tripod-statement.org/wp-content/uploads/2019/12/
 | 7 | Preparation | M Data Preparation; S Methods S1–S2 | Linking, coding, exclusions and transformations reported. |
 | 8a | Outcome | M Metabolic outcomes; S Methods S1 | Pragmatic contemporaneous endpoint defined. |
 | 8b | Assessment | S Methods S1 | Public measurements and questionnaires; no additional adjudication or analyst blinding. |
+| 8c | Blinding | S Methods S1 | No additional analyst blinding; endpoint derived from existing NHANES measurements and questionnaires. |
 | 9a | Predictors | M Prediction analysis; S Methods S2 | Four nested panels listed. |
 | 9b | Measurement | S Methods S1–S2 | Source codes, units and transformations stated. |
 | 9c | Subjectivity | S Methods S1 | No new subjective predictor assessment; existing public measurements used. |
@@ -56,3 +58,5 @@ Official checklist: https://www.tripod-statement.org/wp-content/uploads/2019/12/
 | 27a | Inputs in practice | S Methods S1–S2 | Not applicable, no deployment proposed. |
 | 27b | User interaction | S Methods S1–S2 | Not applicable, research benchmark. |
 | 27c | Further evaluation | M Discussion, final paragraph | Independent replication and clinical evaluation needed. |
+
+TRIPOD+AI abstract assessment (items 1–13): 1, partial: the title emphasizes association rather than model development/evaluation. 2–4, context, objective and data source reported. 5, partial: age and population reported; full eligibility and setting are in Methods. 6, partial: the contemporaneous endpoint and component count are stated; thresholds are in Methods. 7, partial: penalized logistic regression and cycle-based cross-validation reported; additional model classes are in Methods. 8, partial: AUC reported; calibration and other scores are in Table 3 and Table S11. 9, development/test participants and cases reported. 10, partial: predictor domains stated; complete panels are in Methods. 11, partial: AUC and incremental AUC with intervals reported; calibration is outside the abstract. 12, interpretation and limits stated. 13, no independent registration; repository details are in Code availability. This assessment documents reporting limits and does not assert complete checklist compliance.
