@@ -1,0 +1,11 @@
+"analysis","n","cases","men","women","male_cases","female_cases"
+"unadjusted",3971,1643,2008,1963,944,699
+"measured_only_outcome",3950,1398,1998,1952,829,569
+"single_count_lipid_medication",3965,1607,2004,1961,926,681
+"conventional_mets",3955,1314,2005,1950,690,624
+"bmi_adjusted",3971,1643,2008,1963,944,699
+"minimal_covariates",3971,1643,2008,1963,944,699
+"exclude_2017_2018",3220,1314,1630,1590,756,558
+"android_gynoid",3971,1643,2008,1963,944,699
+"visceral_adipose_tissue",3971,1643,2008,1963,944,699
+"leg_and_trunk_components",3971,1643,2008,1963,944,699

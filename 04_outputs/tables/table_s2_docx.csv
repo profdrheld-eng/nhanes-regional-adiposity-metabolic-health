@@ -1,0 +1,4 @@
+Model,Δ ROC AUC (95% CI),Δ Brier score,Δ log loss
+Penalized logistic,0.033 (0.011–0.055),-0.016,-0.033
+Spline logistic,0.036 (0.013–0.057),-0.016,-0.034
+XGBoost,0.031 (0.012–0.050),-0.013,-0.030

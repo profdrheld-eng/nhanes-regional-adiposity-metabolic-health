@@ -1,0 +1,13 @@
+"metric","value"
+"fasting_design_rows",11223
+"primary_domain_rows",3971
+"primary_cases",1643
+"primary_design_degrees_freedom",62
+"primary_deviance",2203.11161146369
+"primary_df_residual",40
+"primary_fitted_above_one",158
+"primary_max_fitted",2.95366526336121
+"primary_converged",1
+"nonlinear_fitted_above_one",130
+"nonlinear_max_fitted",3.02905133538184
+"nonlinear_converged",1

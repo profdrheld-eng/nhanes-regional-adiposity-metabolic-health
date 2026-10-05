@@ -1,0 +1,4 @@
+R 4.6.0
+foreign 0.8-91
+splines 4.6.0
+survey 4.5

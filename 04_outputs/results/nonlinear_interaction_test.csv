@@ -1,0 +1,5 @@
+"test","statistic","numerator_df","denominator_df","p_value"
+"joint quadratic and cubic exposure terms across sexes",8.62912370705273,4,36,5.44390287826463e-05
+"joint quadratic and cubic exposure terms in male reference group",7.90047574754183,2,36,0.00143009782653118
+"additional quadratic and cubic exposure-by-sex terms",0.728267215656553,2,36,0.489720564142611
+"all exposure-by-sex terms",0.502892740469849,3,36,0.682698731497591

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this version of the analysis code and the associated paper when available."
+title: "NHANES regional adiposity and metabolic health analysis code"
+type: software
+version: 1.0.0
+date-released: 2026-10-05
+authors:
+  - family-names: Held
+    given-names: Steffen
+  - family-names: Micke
+    given-names: Florian
+  - family-names: Matzka
+    given-names: Manuel
+  - family-names: Isenmann
+    given-names: Eduard
+repository-code: "https://github.com/profdrheld-eng/nhanes-regional-adiposity-metabolic-health"

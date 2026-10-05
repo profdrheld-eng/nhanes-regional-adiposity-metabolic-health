@@ -1,0 +1,20 @@
+{
+  "study_id": "NHANES-LBF-MET-2026-01",
+  "freeze_date": "2026-07-26",
+  "cycles": ["2011-2012", "2013-2014", "2015-2016", "2017-2018"],
+  "age_min": 20,
+  "age_max": 59,
+  "primary_exposure": "log_leg_trunk_ratio",
+  "primary_outcome": "metabolic_dysfunction_2_of_4",
+  "primary_covariates": ["age_spline", "sex", "race_ethnicity", "cycle", "education", "poverty_income_ratio", "smoking", "total_fat_mass_index"],
+  "primary_interaction": "log_leg_trunk_ratio_z_by_sex",
+  "survey_weight": "WTSAF2YR_divided_by_4",
+  "alpha": 0.05,
+  "ml_development_cycles": ["2011-2012", "2013-2014", "2015-2016"],
+  "ml_test_cycle": "2017-2018",
+  "ml_models": ["penalized_logistic", "spline_logistic", "xgboost"],
+  "ml_test_uncertainty_bootstrap_replicates": 1000,
+  "ml_test_uncertainty_status": "publication-stage exploratory addition",
+  "deep_learning": false,
+  "seed": 20260726
+}

@@ -1,0 +1,51 @@
+sample,characteristic,value
+Development 2011–2016,Participants / cases,3220 / 1314
+Development 2011–2016,"Weighted outcome prevalence, %",39.7
+Development 2011–2016,"Female participants, n (weighted %)",1590 (49.2)
+Development 2011–2016,RIDAGEYR,39.11 (11.72); missing 0
+Development 2011–2016,BMXBMI,28.57 (6.53); missing 0
+Development 2011–2016,BMXWAIST,97.27 (15.88); missing 13
+Development 2011–2016,INDFMPIR,2.86 (1.68); missing 0
+Development 2011–2016,total_fmi,9.75 (4.28); missing 0
+Development 2011–2016,log_leg_trunk_ratio,-0.28 (0.31); missing 0
+Development 2011–2016,ag_ratio,1.00 (0.20); missing 0
+Development 2011–2016,vat_kg,0.50 (0.28); missing 0
+Development 2011–2016,race_ethnicity: 1,476 (10.1%)
+Development 2011–2016,race_ethnicity: 2,350 (7.2%)
+Development 2011–2016,race_ethnicity: 3,1195 (62.7%)
+Development 2011–2016,race_ethnicity: 4,616 (11.2%)
+Development 2011–2016,race_ethnicity: 6,480 (6.0%)
+Development 2011–2016,race_ethnicity: 7,103 (2.8%)
+Development 2011–2016,education: 1.0,190 (4.2%)
+Development 2011–2016,education: 2.0,386 (9.7%)
+Development 2011–2016,education: 3.0,686 (20.8%)
+Development 2011–2016,education: 4.0,1012 (32.3%)
+Development 2011–2016,education: 5.0,946 (33.1%)
+Development 2011–2016,smoking: Current,723 (22.0%)
+Development 2011–2016,smoking: Former,569 (19.1%)
+Development 2011–2016,smoking: Never,1928 (59.0%)
+Test 2017–2018,Participants / cases,751 / 329
+Test 2017–2018,"Weighted outcome prevalence, %",39.0
+Test 2017–2018,"Female participants, n (weighted %)",373 (47.8)
+Test 2017–2018,RIDAGEYR,38.46 (11.65); missing 0
+Test 2017–2018,BMXBMI,28.34 (6.41); missing 0
+Test 2017–2018,BMXWAIST,96.20 (15.67); missing 3
+Test 2017–2018,INDFMPIR,2.95 (1.62); missing 0
+Test 2017–2018,total_fmi,9.55 (4.19); missing 0
+Test 2017–2018,log_leg_trunk_ratio,-0.30 (0.30); missing 0
+Test 2017–2018,ag_ratio,1.00 (0.20); missing 0
+Test 2017–2018,vat_kg,0.47 (0.27); missing 0
+Test 2017–2018,race_ethnicity: 1,122 (11.5%)
+Test 2017–2018,race_ethnicity: 2,66 (6.9%)
+Test 2017–2018,race_ethnicity: 3,239 (58.2%)
+Test 2017–2018,race_ethnicity: 4,130 (9.8%)
+Test 2017–2018,race_ethnicity: 6,133 (6.7%)
+Test 2017–2018,race_ethnicity: 7,61 (7.0%)
+Test 2017–2018,education: 1.0,40 (2.7%)
+Test 2017–2018,education: 2.0,75 (6.9%)
+Test 2017–2018,education: 3.0,157 (22.3%)
+Test 2017–2018,education: 4.0,261 (33.0%)
+Test 2017–2018,education: 5.0,218 (35.1%)
+Test 2017–2018,smoking: Current,146 (18.3%)
+Test 2017–2018,smoking: Former,141 (24.4%)
+Test 2017–2018,smoking: Never,464 (57.4%)

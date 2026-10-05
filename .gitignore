@@ -1,0 +1,13 @@
+02_data/raw_public/
+02_data/derived/
+03_analysis/models/
+.venv/
+.Rlibrary/
+__pycache__/
+*.pyc
+.DS_Store
+03_analysis/environment/matplotlib-cache/
+05_manuscript/final/
+05_manuscript/review/
+05_manuscript/quality_control/artifact_manifest_sha256.csv
+*.log
