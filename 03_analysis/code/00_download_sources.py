@@ -14,7 +14,9 @@ def main():
     target = ROOT / '02_data/raw_public'
     target.mkdir(parents=True, exist_ok=True)
     with (ROOT / '02_data/manifests/raw-public-file-manifest.csv').open() as f:
-        rows = list(csv.DictReader(f))
+        rows = [row for row in csv.DictReader(f) if row['download_status'] == 'downloaded']
+    if len(rows) != 69:
+        raise ValueError('Expected exactly 69 frozen available source files')
     for row in rows:
         name = row['file']
         if Path(name).name != name or not row['url'].startswith('https://wwwn.cdc.gov/'):

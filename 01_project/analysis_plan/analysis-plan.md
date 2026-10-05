@@ -1,4 +1,4 @@
-> Revision notice, 2026-10-05: The original plan below is retained. The authorized correction amendment is documented in `../../07_revision/2026-10-05/PLAN.md`. Local plan freezing is not independent preregistration.
+> Revision notice, 2026-10-05: The original plan below is retained. The authorized correction amendment is documented in `amendment-2026-10-05.md`. Local plan freezing is not independent preregistration.
 
 # Frozen statistical analysis plan
 

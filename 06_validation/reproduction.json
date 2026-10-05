@@ -1,0 +1,8 @@
+{
+  "primary_sex_contrasts.csv": "match within rtol=1e-9, atol=1e-11",
+  "sensitivity_sex_contrasts.csv": "match within rtol=1e-9, atol=1e-11",
+  "ml_temporal_metrics.csv": "match within rtol=1e-9, atol=1e-11",
+  "ml_incremental_value.csv": "match within rtol=1e-9, atol=1e-11",
+  "nhanes_leg_to_trunk_metabolic_manuscript": "all table cells match",
+  "nhanes_leg_to_trunk_supplement": "all table cells match"
+}

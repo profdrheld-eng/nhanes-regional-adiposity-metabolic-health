@@ -5,6 +5,8 @@ analysis_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 r_bin=${R_BIN:-Rscript}
 python_bin=${PYTHON_BIN:-python3}
 docx_python=${DOCX_PYTHON_BIN:-$python_bin}
+export MPLBACKEND=Agg
+export MPLCONFIGDIR="${MPLCONFIGDIR:-$analysis_dir/environment/matplotlib-cache}"
 
 "$r_bin" "$analysis_dir/code/01_build_dataset.R"
 "$r_bin" "$analysis_dir/code/02_survey_analysis.R"

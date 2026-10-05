@@ -12,7 +12,7 @@ Use R 4.6.0 and Python 3.12 (the original analysis used Python 3.9.6; both softw
 
 ```sh
 python3 -m venv .venv
-.venv/bin/python -m pip install -r 03_analysis/environment/requirements.txt
+.venv/bin/python -m pip install -r 03_analysis/environment/requirements-lock-python312.txt
 ```
 
 Install the R packages specified in `03_analysis/environment/r-packages.txt` into an isolated R library. The `survey` version is 4.5; `foreign` is 0.8-91. Base package `splines` follows R. These are version specifications, not a complete transitive R lockfile.
