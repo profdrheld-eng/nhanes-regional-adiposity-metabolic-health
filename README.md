@@ -41,11 +41,11 @@ Raw records, derived participant-level data, individual predictions, fitted bina
 
 ## Versions and citation
 
-Cite the repository URL, release tag `v1.0.0` and full commit SHA. `CITATION.cff` supplies authorship metadata. This repository uses GitHub releases without Zenodo or a DOI. GitHub hosting and a release tag are not a guarantee of permanent archival preservation.
+The numerical analysis release remains `v1.0.0`. Subsequent commits synchronize publication statements with the current manuscript without changing analysis code or reference estimates. Cite the repository URL, the release tag and its full commit SHA for the analysis; cite the exact later commit separately when referring to updated publication statements. `CITATION.cff` supplies authorship metadata. This repository uses GitHub releases without Zenodo or a DOI. GitHub hosting and a release tag are not a guarantee of permanent archival preservation.
 
 ## Rights and limitations
 
-Public source access is provided for inspection and reproducibility. An open-source reuse license has not been approved; see `LICENSE`. CDC data and third-party packages retain their own terms. These research models are not validated clinical tools. Patient/public involvement confirmation remains an author item in the reporting checklist.
+Public source access is provided for inspection and reproducibility. An open-source reuse license has not been approved; see `LICENSE`. CDC data and third-party packages retain their own terms. These research models are not validated clinical tools. The author confirmed that there was no patient involvement in this secondary analysis.
 
 ## AI assistance and author responsibility
 
@@ -53,4 +53,4 @@ OpenAI Codex assisted with code development, debugging, explanatory documentatio
 
 ## Review and remaining limits
 
-The release audit is documented in `06_validation/RELEASE_REVIEW.md`. Tests do not guarantee error-free code or risk-free use. No known unresolved release-blocking issue was identified in the documented review. This is a research-code release, not a declaration that the associated manuscript is submission-ready. Patient/public involvement confirmation and final journal-specific checks remain separate publication tasks.
+The release audit is documented in `06_validation/RELEASE_REVIEW.md`. Tests do not guarantee error-free code or risk-free use. No known unresolved release-blocking issue was identified in the documented review. This is a research-code release, not a declaration that the associated manuscript is submission-ready. Final journal-specific checks remain a separate publication task. Restoring the full R dependency set into a new empty library has not yet been demonstrated; the existing numerical reproduction used an available R library.

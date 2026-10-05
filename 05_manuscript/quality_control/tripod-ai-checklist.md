@@ -38,11 +38,11 @@ Official checklist: https://www.tripod-statement.org/wp-content/uploads/2019/12/
 | 17 | Ethics | M Ethics statement | Original survey consent and NCHS oversight; local determination confirmed by authors. |
 | 18a | Funding | M Funding | No specific funding, as confirmed by authors. |
 | 18b | Interests | M Conflicts of interest | None declared by authors. |
-| 18c | Protocol | M Software and reproducibility | Local plan and dated amendment; permanent external access remains pending. |
+| 18c | Protocol | M Software and reproducibility | Local plan and dated amendment included in GitHub release v1.0.0; not independent preregistration. |
 | 18d | Registration | M Software and reproducibility | Local freezing is not independent preregistration. |
 | 18e | Data | M Data availability | Public CDC data and local source manifest. |
 | 18f | Code | M Code availability | Versioned GitHub code release available; no separate DOI or archival preservation service. |
-| 19 | Public involvement | S Transparency | Author confirmation remains pending. |
+| 19 | Public involvement | S Transparency | No patient involvement in this secondary analysis (author confirmed). |
 | 20a | Flow | S Figure S3, Tables S3 and S8 | Counts, cases and noncases reported; no follow-up interval. |
 | 20b | Description | M Table 1; S Tables S4b and S8 | Characteristics, medication and missingness described. |
 | 20c | Comparison | S Table S8 | Development/test sample characteristics. |
