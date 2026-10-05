@@ -180,7 +180,7 @@ NHANES data are publicly available from the US Centers for Disease Control and P
 
 ## Code availability
 
-The complete analysis pipeline, frozen configuration, source manifest, derived-data specification, tables, and figures are available in the project package. [AUTHOR TO VERIFY: provide a durable code repository or archive and, where available, a DOI before submission.]
+The analysis code, frozen configuration, source manifest, aggregate reference results, and reproduction instructions are available at https://github.com/profdrheld-eng/nhanes-regional-adiposity-metabolic-health (release v1.0.0). The release is identified by its Git tag and commit hash; no separate code DOI is assigned. Participant-level data, predictions, and fitted model objects are generated locally and are not distributed in the repository.
 
 ## Ethics statement
 
