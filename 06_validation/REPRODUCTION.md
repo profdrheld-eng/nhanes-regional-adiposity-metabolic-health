@@ -7,3 +7,5 @@ Data construction, association models, all prediction models, 1,000 bootstrap re
 This confirms a fresh checkout with recorded dependencies on this Mac. It is not a cross-platform test or proof of future URL availability. The R environment was supplied from an existing local library; r-installed-versions.csv records the full installed versions. Python dependencies were installed into a new isolated environment. The original Python 3.9.6 and the reproduced Python 3.12 environment are both documented.
 
 Excluded from publication: raw records, derived participant rows, individual predictions, fitted binary models, internal reviews and prior document versions. Historical population comparison remains an explicitly non-regenerated aggregate artifact. Rights are reserved pending author selection of an open-source license.
+
+The initial clone retained reference aggregate outputs. The later empty-output reproduction described in RELEASE_REVIEW.md is the stronger check and supersedes it for the release decision. It identified and removed one obsolete helper table not used in the paper.

@@ -3,6 +3,7 @@ import csv
 import hashlib
 from pathlib import Path
 import urllib.request
+import tempfile
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -26,7 +27,8 @@ def main():
             if not valid(dest, row):
                 raise RuntimeError(f'Existing source differs from frozen manifest: {name}; not overwritten')
             continue
-        temp = dest.with_suffix('.download')
+        with tempfile.NamedTemporaryFile(dir=target, prefix=name+'.', suffix='.download', delete=False) as pending:
+            temp = Path(pending.name)
         try:
             request = urllib.request.Request(row['url'], headers={'User-Agent': 'NHANES-reproducibility/1.0'})
             with urllib.request.urlopen(request, timeout=90) as response, temp.open('wb') as out:

@@ -1,0 +1,246 @@
+{
+  "checked": "2026-10-05",
+  "source": "https://api.osv.dev/v1/querybatch",
+  "packages": [
+    {
+      "query": {
+        "package": {
+          "name": "contourpy",
+          "ecosystem": "PyPI"
+        },
+        "version": "1.4.0"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "cycler",
+          "ecosystem": "PyPI"
+        },
+        "version": "0.12.1"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "fonttools",
+          "ecosystem": "PyPI"
+        },
+        "version": "4.66.1"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "joblib",
+          "ecosystem": "PyPI"
+        },
+        "version": "1.5.3"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "kiwisolver",
+          "ecosystem": "PyPI"
+        },
+        "version": "1.5.1"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "lxml",
+          "ecosystem": "PyPI"
+        },
+        "version": "6.1.3"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "matplotlib",
+          "ecosystem": "PyPI"
+        },
+        "version": "3.9.4"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "numpy",
+          "ecosystem": "PyPI"
+        },
+        "version": "2.0.2"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "packaging",
+          "ecosystem": "PyPI"
+        },
+        "version": "26.3"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "pandas",
+          "ecosystem": "PyPI"
+        },
+        "version": "2.3.3"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "patsy",
+          "ecosystem": "PyPI"
+        },
+        "version": "1.0.3"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "pillow",
+          "ecosystem": "PyPI"
+        },
+        "version": "12.3.0"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "pyparsing",
+          "ecosystem": "PyPI"
+        },
+        "version": "3.3.3"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "python-dateutil",
+          "ecosystem": "PyPI"
+        },
+        "version": "2.9.0.post0"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "python-docx",
+          "ecosystem": "PyPI"
+        },
+        "version": "1.2.0"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "pytz",
+          "ecosystem": "PyPI"
+        },
+        "version": "2026.5"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "scikit-learn",
+          "ecosystem": "PyPI"
+        },
+        "version": "1.6.1"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "scipy",
+          "ecosystem": "PyPI"
+        },
+        "version": "1.13.1"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "six",
+          "ecosystem": "PyPI"
+        },
+        "version": "1.17.0"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "statsmodels",
+          "ecosystem": "PyPI"
+        },
+        "version": "0.14.6"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "threadpoolctl",
+          "ecosystem": "PyPI"
+        },
+        "version": "3.7.0"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "typing_extensions",
+          "ecosystem": "PyPI"
+        },
+        "version": "4.16.0"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "tzdata",
+          "ecosystem": "PyPI"
+        },
+        "version": "2026.5"
+      },
+      "result": {}
+    },
+    {
+      "query": {
+        "package": {
+          "name": "xgboost",
+          "ecosystem": "PyPI"
+        },
+        "version": "2.1.4"
+      },
+      "result": {}
+    }
+  ]
+}

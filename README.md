@@ -6,23 +6,27 @@ Authors: Steffen Held, Florian Micke, Manuel Matzka and Eduard Isenmann.
 
 The primary population includes 3,971 adults (1,643 cases). The exploratory prediction benchmark uses 3,220 development observations and 751 temporal-test observations. Cross-sectional associations do not establish causality or clinical utility. Sex heterogeneity depends on the exposure model. Added discrimination reflects both total and regional DXA variables.
 
-## Reproduce
+## Reproduce safely
 
-Use R 4.6.0 and Python 3.12 (the original analysis used Python 3.9.6; both software provenance records are retained). Install the exact Python dependencies into a dedicated environment:
-
-```sh
-python3 -m venv .venv
-.venv/bin/python -m pip install -r 03_analysis/environment/requirements-lock-python312.txt
-```
-
-Install the R packages specified in `03_analysis/environment/r-packages.txt` into an isolated R library. The `survey` version is 4.5; `foreign` is 0.8-91. Base package `splines` follows R. These are version specifications, not a complete transitive R lockfile.
+The tested runtime is R 4.6.0 and Python 3.12. The original analysis used Python 3.9.6; the current numerical reproduction is documented separately. Install dependencies in an environment outside the repository:
 
 ```sh
-.venv/bin/python 03_analysis/code/00_download_sources.py
-PYTHON_BIN="$PWD/.venv/bin/python" sh 03_analysis/run_analysis.sh
+python3.12 -m venv /your/local/adiposity-env
+/your/local/adiposity-env/bin/python -m pip install -r 03_analysis/environment/requirements-lock-python312.txt
 ```
 
-If using a custom R library, set `R_LIBS_USER` to its location. `R_BIN` can select Rscript. The pipeline reads only local source files after download, rebuilds participant-level data, fits association and prediction models, computes 1,000 rescaled-bootstrap replicates, rebuilds tables/figures and documents, then validates the package. Runtime depends on the machine. Outputs are replaced during regeneration; preserve a release copy for comparison.
+`03_analysis/environment/r-required-versions.csv` lists the exact R dependency closure used here. Install these versions in an isolated R library; set `R_LIBS_USER` to its location. This list is not an installer or a transitive source-archive lockfile. No command here installs packages automatically. macOS was tested; Windows and Linux runtime support has not been demonstrated.
+
+```sh
+/your/local/adiposity-env/bin/python -B verify_release.py
+/your/local/adiposity-env/bin/python -B -m unittest discover -s tests -v
+Rscript --vanilla tests/test_data_rules.R
+/your/local/adiposity-env/bin/python -B run_reproduction.py --work-dir /your/new/adiposity-work
+```
+
+The work directory must not exist and must be outside this repository. The runner checks dependency versions, creates an isolated copy without the reference results, downloads the public CDC inputs, verifies all 69 source checksums, runs all analysis and reporting stages, and compares 37 aggregate result/table files against the release. Only the explicitly documented historical aggregate is copied. It writes `pipeline_complete.json` only after every step succeeds. A failed run leaves its log and partial outputs for inspection; use a new directory for another attempt.
+
+To use existing public files, add `--data-dir /your/local/nhanes-xpt`; they are copied and verified before analysis. No existing input file is changed. Do not upload the work directory: it contains individual records, predictions and fitted objects. The low-level `03_analysis/run_analysis.sh` is for the isolated work copy; use the top-level runner for normal reproduction. Runtime depends on the machine.
 
 ## Structure
 
@@ -42,3 +46,11 @@ Cite the repository URL, release tag `v1.0.0` and full commit SHA. `CITATION.cff
 ## Rights and limitations
 
 Public source access is provided for inspection and reproducibility. An open-source reuse license has not been approved; see `LICENSE`. CDC data and third-party packages retain their own terms. These research models are not validated clinical tools. Patient/public involvement confirmation remains an author item in the reporting checklist.
+
+## AI assistance and author responsibility
+
+OpenAI Codex assisted with code development, debugging, explanatory documentation, language editing and reproducibility checks. This support does not establish the validity of methodological assumptions or replace scientific judgment. The authors retain responsibility for analytical decisions, interpretation and the released materials. Participant-level computations were executed locally; the public release contains aggregate outputs rather than participant records. No AI system is listed as an author.
+
+## Review and remaining limits
+
+The release audit is documented in `06_validation/RELEASE_REVIEW.md`. Tests do not guarantee error-free code or risk-free use. No known unresolved release-blocking issue was identified in the documented review. This is a research-code release, not a declaration that the associated manuscript is submission-ready. Patient/public involvement confirmation and final journal-specific checks remain separate publication tasks.
